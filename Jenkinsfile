@@ -1,14 +1,21 @@
 pipeline {
     agent any
+    tools {
+        maven 'default'
+    }
     stages {
         stage('Build') {
             steps {
-                sh 'mvn clean package'
+                withMaven(maven: 'default') {
+                    sh 'mvn clean package'
+                }
             }
         }
         stage('Test') {
             steps {
-                sh 'mvn test'
+                withMaven(maven: 'default') {
+                    sh 'mvn test'
+                }
             }
         }
         stage('Archive') {
