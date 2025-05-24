@@ -1,0 +1,18 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "shell",
+			"label": "Run Spring Boot Application",
+			"command": "./mvnw spring-boot:run",
+			"group": "test",
+			"isBackground": true
+		},
+		{
+			"type": "shell",
+			"label": "Build Spring Boot Project",
+			"command": "./mvnw clean package",
+			"group": "build"
+		}
+	]
+}
