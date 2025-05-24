@@ -4,7 +4,7 @@ pipeline {
         maven 'default'
     }
     environment {
-        JAVA_HOME = '/usr/bin/java'
+        JAVA_HOME = '/opt/homebrew/opt/openjdk@21/bin/java'
         PATH = "${JAVA_HOME}/bin:${env.PATH}"
     }
     stages {
