@@ -2,7 +2,6 @@ pipeline {
     agent any
     tools {
         maven 'default'
-        jdk 'default'
     }
     environment {
         JAVA_HOME = '/usr/bin/java'
