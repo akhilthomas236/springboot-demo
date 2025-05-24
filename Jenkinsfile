@@ -5,7 +5,7 @@ pipeline {
         jdk 'default'
     }
     environment {
-        JAVA_HOME = '/Users/annmariyajoshy/.jenkins/tools/hudson.model.JDK/default/jdk-24.0.1.jdk'
+        JAVA_HOME = '/usr/bin/java'
         PATH = "${JAVA_HOME}/bin:${env.PATH}"
     }
     stages {
